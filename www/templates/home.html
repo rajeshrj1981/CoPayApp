@@ -1,0 +1,31 @@
+<ion-view title={{title}}>    
+    <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-log-out" ng-click="logOut()"></button>
+  </ion-nav-buttons>  
+    <ion-content padding="true">	
+	<div class="image-container" ng-show="userData.imageReady" border=1>
+		<img class="image-container" ng-src="data:image/jpeg;base64,{{images[0].image}}" ng-show="userData.showFront"/>
+		<img class="image-container" ng-src="data:image/jpeg;base64,{{images[1].image}}" ng-hide="userData.showFront"/>
+		<a href="" ng-click="flipImage()" ng-if="images.length > 1">
+		<img class="flip-button" ng-src="img/ios7-loop-strong.png" width="40"/></a>
+</div>	
+	<div class="list list-inset" ng-show="showPortaitDiv">	   
+		<label class="item item-input">
+			Age: {{userData.age}}
+		</label>
+		<label class="item item-input">
+			Co-Pay: {{userData.copay}}
+		</label>
+		<label class="item item-input">
+			Urget Care: {{userData.urgentCare}}
+		</label>
+		<label class="item item-input">
+			ER: {{userData.er}}
+		</label>				
+	</div>
+	<br>
+    </ion-content>
+</ion-view>

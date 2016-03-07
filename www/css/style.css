@@ -1,0 +1,38 @@
+/* Empty. Add your own CSS if you like 
+
+.menu.menu-left{
+	width: calc(30% - 20px) !important;
+}
+.menu-open .menu-content{
+	transform: translate3d(calc(30% - 20px), 0px, 0px) !important;
+}
+*/
+
+.custom-popup.popup-container .popup .button {
+	background-color: green;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+width: 100%;
+height: 300px;
+}
+
+.flip-button {
+    position: absolute;    
+    right: 10px;
+    top: 10px;
+}
+
+.child-item {
+padding: 0;
+	width:100%;
+}
+
+.button.cobutton {
+    background-color: #33cd5f;
+border-color: transparent;
+color: #fff; 
+width: 50%;
+}
